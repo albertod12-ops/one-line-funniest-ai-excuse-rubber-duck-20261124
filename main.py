@@ -7,7 +7,8 @@ import os
 LINE = "I asked my rubber duck if the deadline was flexible and it said nothing, which I took as a yes."
 
 # The bounty allows one line of at most 200 characters.
-# This line is 95 characters, 95 bytes UTF-8, no trailing newline.
+# This line is 95 characters, 95 bytes UTF-8, no trailing newline:
+# plain ASCII throughout, so characters and bytes agree exactly.
 assert "\n" not in LINE and 1 <= len(LINE) <= 200
 
 
